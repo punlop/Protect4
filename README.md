@@ -27,7 +27,7 @@ $ pip3 install thrift==0.11.0
 $ pip3 install tweepy
 $ pip3 install wikipedia
 $ apt install git
-$ git clone https://github.com/Aditmadzs/Protect4
+$ git clone https://github.com/punlop/Protect4
 $ cd Protect4
 $ python3 adit4.py
 ```
@@ -51,7 +51,7 @@ $ sudo pip3 install thrift==0.11.0
 $ sudo pip3 install tweepy
 $ sudo pip3 install wikipedia
 $ sudo apt-get install git
-$ git clone https://github.com/Aditmadzs/Protect4
+$ git clone https://github.com/punlop/Protect4
 $ cd Protect4
 $ python3 adit4.py
 ```

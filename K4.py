@@ -9,32 +9,32 @@ from datetime import timedelta, date
 from datetime import datetime
 from bs4 import BeautifulSoup
 
-aditmadzs = LineClient(authToken='TOKEN')
+aditmadzs = LineClient(authToken='EF2XjZgSYapLZ8IGtHuc.0H28zbRLhRgMrqsyhFsMRa.1IEg+761pJ6qZMFqjHk4CBUnQHEOuBagTm4Nrf29HEI=')
 aditmadzs.log("Auth Token : " + str(aditmadzs.authToken))
-channel = LineChannel(aditmadzs)
-aditmadzs.log("Channel Access Token : " + str(channel.channelAccessToken))
+channel1 = LineChannel(aditmadzs)
+aditmadzs.log("Channel Access Token : " + str(channel1.channelAccessToken))
 
-ki = LineClient(authToken='TOKEN LU')
+ki = LineClient(authToken='EFBaqGMSHNiChQDEBMi3.QWkyD4fJIKGXLE5UKzg0GW.tG+wK4o8nOzuEbb5LcQXStPvQhMD+mnRKZckcBHi3Z8=')
 ki.log("Auth Token : " + str(ki.authToken))
-channel1 = LineChannel(ki)
-ki.log("Channel Access Token : " + str(channel1.channelAccessToken))
+channel2 = LineChannel(ki)
+ki.log("Channel Access Token : " + str(channel2.channelAccessToken))
 
-kk = LineClient(authToken='TOKEN LU')
+kk = LineClient(authToken='EG3SW4y9SskbOAMYnqFc.VzG1RPSDK+A9Mis5muS+Ja.svGIfVRzx0AQvaONLReqaTSHY8qCDUXNJ417ZXNH3Aw=')
 kk.log("Auth Token : " + str(kk.authToken))
-channel2 = LineChannel(kk)
-kk.log("Channel Access Token : " + str(channel2.channelAccessToken))
+channel3 = LineChannel(kk)
+kk.log("Channel Access Token : " + str(channel3.channelAccessToken))
 
-kc = LineClient(authToken='TOKEN LU')
+kc = LineClient(authToken='EGESJB6b8bRIuxbuEsM3.XS7ev/u3jVh5bYIzLprvWW.ap6xF9CGgYoQxFa/K906aglzMkdx7r2P5cL7S1Ua7Uk=')
 kc.log("Auth Token : " + str(kc.authToken))
-channel3 = LineChannel(kc)
-kc.log("Channel Access Token : " + str(channel3.channelAccessToken))
+channel4 = LineChannel(kc)
+kc.log("Channel Access Token : " + str(channel4.channelAccessToken))
 
 poll = LinePoll(aditmadzs)
 call = aditmadzs
-creator = ["u874a7502c02896b2edbb3445c2615d35"]
-owner = ["u874a7502c02896b2edbb3445c2615d35"]
-admin = ["u874a7502c02896b2edbb3445c2615d35"]
-staff = ["u874a7502c02896b2edbb3445c2615d35"]
+creator = ["u083bdc9ca7257b41cd4d1de933a5ad8e"]
+owner = ["u083bdc9ca7257b41cd4d1de933a5ad8e","ud21dbc641ae51eb1a64504981df4a6ac"]
+admin = ["ud21dbc641ae51eb1a64504981df4a6ac"]
+staff = ["ud21dbc641ae51eb1a64504981df4a6ac"]
 mid = aditmadzs.getProfile().mid
 Amid = ki.getProfile().mid
 Bmid = kk.getProfile().mid
@@ -194,7 +194,7 @@ def runtime(secs):
 def sendMentionFooter(to, text="", mids=[]):
     arrData = ""
     arr = []
-    mention = "@Aditmadzs "
+    mention = "@ADITMADZS "
     if mids == []:
         raise Exception("Invalid mids")
     if "@!" in text:
@@ -360,11 +360,11 @@ def help():
     key = Setmain["keyCommand"]
     key = key.title()
     helpMessage = "╭════════════════" + "\n" + \
-                  "║»» Aditmadzs" + "\n" + \
+                  "║»» Aumxyz" + "\n" + \
                   "║»════════════════" + "\n" + \
                   "║»» Help Message " + "\n" + \
                   "║»════════════════" + "\n" + \
-                  "║»» List Menu " + "\n" + \
+                  "║»» เมนูคำสั่ง " + "\n" + \
                   "║»» " + key + "Cctv「on/off」\n" + \
 				  "║»» " + key + "Creator\n" + \
 				  "║»» " + key + "Cyduk\n" + \
@@ -377,8 +377,8 @@ def help():
                   "║»» " + key + "Listadmin\n" + \
 				  "║»» " + key + "Status\n" + \
 				  "║»══════════════" + "\n" + \
-                  "║» http://line.me/ti/p/~adit_cmct" + "\n" + \
-                  "╰═══ CREATOR: ©Aditmadzs™"
+                  "║» http://line.me/ti/p/~aumziibot" + "\n" + \
+                  "╰═══ CREATOR: ©Aumxyz™"
     return helpMessage
     
     
@@ -387,7 +387,7 @@ def helpcreator():
     key = Setmain["keyCommand"]
     key = key.title()
     helpMessage1 = "╭═════════════" + "\n" + \
-                  "║»» Aditmadzs " + "\n" + \
+                  "║»» Aumxyz " + "\n" + \
                   "║»══════════════" + "\n" + \
                   "║»» Help BOT " + "\n" + \
                   "║»══════════════" + "\n" + \
@@ -423,8 +423,8 @@ def helpcreator():
                   "║»» " + key + "Resetkey\n" + \
 				  "║»» " + key + "Self「on/off」\n" + \
                   "║»═══════════════" + "\n" + \
-                  "║»══ http://line.me/ti/p/~adit_cmct" + "\n" + \
-                  "╰══ CREATOR: ©Aditmadzs™"
+                  "║»══ http://line.me/ti/p/~aumziibot" + "\n" + \
+                  "╰══ CREATOR: ©Aumxyz™"
     return helpMessage1
 
 def helpblacklist():
@@ -444,8 +444,8 @@ def helpblacklist():
 				  "║»» " + key + "Unban「@」\n" + \
 				  "║»» " + key + "Unban:on\n" + \
 				  "║»═══════════════" + "\n" + \
-                  "║»══ http://line.me/ti/p/~adit_cmct" + "\n" + \
-                  "╰══ CREATOR: ©Aditmadzs™"
+                  "║»══ http://line.me/ti/p/~aumziibot" + "\n" + \
+                  "╰══ CREATOR: ©Aumxyz™"
     return helpMessage3
 
 def helpadmin():
@@ -460,19 +460,19 @@ def helpadmin():
                   "║»» " + key + "Admin:on\n" + \
                   "║»» " + key + "Admin:repeat\n" + \
                   "║»» " + key + "Adminadd「@」\n" + \
-                  "║»» " + key + "Admindell「@」\n" + \
+                  "║»» " + key + "Admindel「@」\n" + \
 				  "║»» " + key + "Bot:on\n" + \
                   "║»» " + key + "Bot:repeat\n" + \
 				  "║»» " + key + "Botadd「@」\n" + \
-                  "║»» " + key + "Botdell「@」\n" + \
+                  "║»» " + key + "Botdel「@」\n" + \
 				  "║»» " + key + "Refresh\n" + \
 				  "║»» " + key + "Staff:on\n" + \
                   "║»» " + key + "Staff:repeat\n" + \
                   "║»» " + key + "Staffadd「@」\n" + \
-                  "║»» " + key + "Staffdell「@」\n" + \
+                  "║»» " + key + "Staffdel「@」\n" + \
                   "║»════════════════" + "\n" + \
-                  "║»══ http://line.me/ti/p/~adit_cmct" + "\n" + \
-                  "╰══ CREATOR: ©Aditmadzs™"
+                  "║»══ http://line.me/ti/p/~aumziibot" + "\n" + \
+                  "╰══ CREATOR: ©Aumxyz™"
     return helpMessage4
     	
 def helpsetting():
@@ -493,8 +493,8 @@ def helpsetting():
 				  "║»» " + key + "Unsend「on/off」\n" + \
                   "║»» " + key + "Welcome「on/off」\n" + \
                   "║»═════════════════" + "\n" + \
-                  "║»══ http://line.me/ti/p/~adit_cmct" + "\n" + \
-                  "╰══ CREATOR: ©Aditmadzs™"
+                  "║»══ http://line.me/ti/p/~aumziibot" + "\n" + \
+                  "╰══ CREATOR: ©Aumxyz™"
     return helpMessage5
     
 def helpprotect():
@@ -507,16 +507,16 @@ def helpprotect():
                   "║»═══════════════" + "\n" + \
                   "║»» List Menu " + "\n" + \
 				  "║»» " + key + "Join dit\n" + \
-				  "║»» " + key + "Ditpro 「on/off」\n" + \
-                  "║»» " + key + "Notag「on/off」\n" + \
+				  "║»» " + key + "Notag 「on/off」\n" + \
+                  "║»» " + key + "Protectall「on/off」\n" + \
                   "║»» " + key + "Protecturl「on/off」\n" + \
                   "║»» " + key + "Protectjoin「on/off」\n" + \
                   "║»» " + key + "Protectkick「on/off」\n" + \
                   "║»» " + key + "Protectcancel「on/off」\n" + \
                   "║»» " + key + "Protectinvite「on/off」\n" + \
 				  "║»════════════════" + "\n" + \
-                  "║»══ http://line.me/ti/p/~adit_cmct" + "\n" + \
-                  "╰══ CREATOR: ©Aditmadzs™"
+                  "║»══ http://line.me/ti/p/~aumziibot" + "\n" + \
+                  "╰══ CREATOR: ©Aumxyz™"
     return helpMessage6
 	
 def helpbot():
@@ -551,8 +551,8 @@ def helpbot():
                   "║»» " + key + "Stealvideoprofile「@」\n" + \
                   "║»» " + key + "Tagall\n" + \
                   "║»════════════════" + "\n" + \
-                  "║»══ http://line.me/ti/p/~adit_cmct" + "\n" + \
-                  "╰═════ CREATOR: ©Aditmadzs™"
+                  "║»══ http://line.me/ti/p/~aumziibot" + "\n" + \
+                  "╰═════ CREATOR: ©Aumxyz™"
     return helpMessage8
 
 def bot(op):
@@ -1306,7 +1306,7 @@ def bot(op):
                         aditmadzs.sendMessage(msg.to,"Berhasil menghapus dari anggota bot")
                     else:
                         wait["dellbots"] = True
-                        aditmadzs.sendMessage(msg.to,"Contact itu bukan anggota bot Aditmadzs")
+                        aditmadzs.sendMessage(msg.to,"Contact itu bukan anggota bot")
 #ADD STAFF
                  if msg._from in admin:
                   if wait["addstaff"] == True:
@@ -1452,7 +1452,7 @@ def bot(op):
                                helpMessage1 = helpcreator()
                                ma = aditmadzs.getProfile()
                                name = "Help Creator Message"
-                               url = 'https://line.me/ti/p/~adit_cmct'
+                               url = 'https://line.me/ti/p/~ADITMADZS'
                                iconlink = 'http://dl.profile.line-cdn.net/{}'.format(str(ma.pictureStatus))
                                sendMentionV10(msg.to, str(helpMessage1), str(name), str(url), str(iconlink))
 
@@ -1462,7 +1462,7 @@ def bot(op):
                                helpMessage4 = helpadmin()
                                ma = aditmadzs.getProfile()
                                name = "Help Admin Message"
-                               url = 'https://line.me/ti/p/~adit_cmct'
+                               url = 'https://line.me/ti/p/~ADITMADZS'
                                iconlink = 'http://dl.profile.line-cdn.net/{}'.format(str(ma.pictureStatus))
                                sendMentionV10(msg.to, str(helpMessage4), str(name), str(url), str(iconlink))
                                
@@ -1472,7 +1472,7 @@ def bot(op):
                                helpMessage5 = helpsetting()
                                ma = aditmadzs.getProfile()
                                name = "Help Settings Message"
-                               url = 'https://line.me/ti/p/~adit_cmct'
+                               url = 'https://line.me/ti/p/~ADITMADZS'
                                iconlink = 'http://dl.profile.line-cdn.net/{}'.format(str(ma.pictureStatus))
                                sendMentionV10(msg.to, str(helpMessage5), str(name), str(url), str(iconlink))                      
 
@@ -1482,7 +1482,7 @@ def bot(op):
                                helpMessage6 = helpprotect()
                                ma = aditmadzs.getProfile()
                                name = "Help Protect Message"
-                               url = 'https://line.me/ti/p/~adit_cmct'
+                               url = 'https://line.me/ti/p/~ADITMADZS'
                                iconlink = 'http://dl.profile.line-cdn.net/{}'.format(str(ma.pictureStatus))
                                sendMentionV10(msg.to, str(helpMessage6), str(name), str(url), str(iconlink))
 
@@ -1492,7 +1492,7 @@ def bot(op):
                                helpMessage8 = helpbot()
                                ma = aditmadzs.getProfile()
                                name = "Help Bot Message"
-                               url = 'https://line.me/ti/p/~adit_cmct'
+                               url = 'https://line.me/ti/p/~ADITMADZS'
                                iconlink = 'http://dl.profile.line-cdn.net/{}'.format(str(ma.pictureStatus))
                                sendMentionV10(msg.to, str(helpMessage8), str(name), str(url), str(iconlink))
 
@@ -1502,7 +1502,7 @@ def bot(op):
                                helpMessage3 = helpblacklist()
                                ma = aditmadzs.getProfile()
                                name = "Help Bot Message"
-                               url = 'https://line.me/ti/p/~adit_cmct'
+                               url = 'https://line.me/ti/p/~ADITMADZS'
                                iconlink = 'http://dl.profile.line-cdn.net/{}'.format(str(ma.pictureStatus))
                                sendMentionV10(msg.to, str(helpMessage3), str(name), str(url), str(iconlink))
 
@@ -1522,35 +1522,35 @@ def bot(op):
                                 tz = pytz.timezone("Asia/Jakarta")
                                 timeNow = datetime.now(tz=tz)
                                 md = "╭═══════════ STATUS ══════════════\n"
-                                if wait["unsend"] == True: md+="║»» ✔️ Unsend「ON」\n"
-                                else: md+="║»» ❌ Unsend「OFF」\n"                                
-                                if wait["Mentionkick"] == True: md+="║»» ✔️ Notag「ON」\n"
-                                else: md+="║»» ❌ Notag「OFF」\n"
-                                if wait["detectMention"] == True: md+="║»» ✔️ Respon「ON」\n"
-                                else: md+="║»» ❌ Respon「OFF」\n"                   
-                                if wait["autoJoin"] == True: md+="║»» ✔️ Autojoin「ON」\n"
-                                else: md+="║»» ❌ Autojoin「OFF」\n"
-                                if settings["autoJoinTicket"] == True: md+="║»» ✔️ Jointicket「ON」\n"
-                                else: md+="║»» ❌ Jointicket「OFF」\n"                                
-                                if wait["autoAdd"] == True: md+="║»» ✔️ Autoadd「ON」\n"
-                                else: md+="║»» ❌ Autoadd「OFF」\n"
-                                if msg.to in welcome: md+="║»» ✔️ Welcome「ON」\n"
-                                else: md+="║»» ❌ Welcome「OFF」\n"                 
-                                if wait["autoLeave"] == True: md+="║»» ✔️ Autoleave「ON」\n"
-                                else: md+="║»» ❌ Autoleave「OFF」\n"
-                                if msg.to in protectqr: md+="║»» ✔️ Protecturl「ON」\n"
-                                else: md+="║»» ❌ Protecturl「OFF」\n"
-                                if msg.to in protectjoin: md+="║»» ✔️ ProtectJoin「ON」\n"
-                                else: md+="║»» ❌ ProtectJoin「OFF」\n"
-                                if msg.to in protectkick: md+="║»» ✔️ Protectkick「ON」\n"
-                                else: md+="║»» ❌ Protectkick「OFF」\n"
-                                if msg.to in protectcancel: md+="║»» ✔️ Protectcancel「ON」\n"
-                                else: md+="║»» ❌ Protectcancel「OFF」\n"
-                                if msg.to in protectinvite: md+="║»» ✔️ Protectinvite「ON」\n"
-                                else: md+="║»» ❌ Protectinvite「OFF」\n"                                
+                                if wait["unsend"] == True: md+="║»» Unsend「ON」\n"
+                                else: md+="║»» Unsend「OFF」\n"                                
+                                if wait["Mentionkick"] == True: md+="║»» Notag「ON」\n"
+                                else: md+="║»» Notag「OFF」\n"
+                                if wait["detectMention"] == True: md+="║»» Respon「ON」\n"
+                                else: md+="║»» Respon「OFF」\n"                   
+                                if wait["autoJoin"] == True: md+="║»» Autojoin「ON」\n"
+                                else: md+="║»» Autojoin「OFF」\n"
+                                if settings["autoJoinTicket"] == True: md+="║»» Jointicket「ON」\n"
+                                else: md+="║»» Jointicket「OFF」\n"                                
+                                if wait["autoAdd"] == True: md+="║»» Autoadd「ON」\n"
+                                else: md+="║»» Autoadd「OFF」\n"
+                                if msg.to in welcome: md+="║»» Welcome「ON」\n"
+                                else: md+="║»» Welcome「OFF」\n"                 
+                                if wait["autoLeave"] == True: md+="║»» Autoleave「ON」\n"
+                                else: md+="║»» Autoleave「OFF」\n"
+                                if msg.to in protectqr: md+="║»» Protecturl「ON」\n"
+                                else: md+="║»» Protecturl「OFF」\n"
+                                if msg.to in protectjoin: md+="║»» ProtectJoin「ON」\n"
+                                else: md+="║»» ProtectJoin「OFF」\n"
+                                if msg.to in protectkick: md+="║»» Protectkick「ON」\n"
+                                else: md+="║»» Protectkick「OFF」\n"
+                                if msg.to in protectcancel: md+="║»» Protectcancel「ON」\n"
+                                else: md+="║»» Protectcancel「OFF」\n"
+                                if msg.to in protectinvite: md+="║»» Protectinvite「ON」\n"
+                                else: md+="║»» Protectinvite「OFF」\n"                                
                                 aditmadzs.sendMessage(msg.to, md+"║»»════════════════════════\n║»» Tanggal : "+ datetime.strftime(timeNow,'%Y-%m-%d')+"\n║»» Jam [ "+ datetime.strftime(timeNow,'%H:%M:%S')+" ]\n  ╰═════════════════════════")
 
-                        elif cmd == "creator" or text.lower() == 'creator':
+                        elif cmd == "creator" or text.lower() == 'ผู้สร้างบอท':
                             if msg._from in admin:
                                 aditmadzs.sendMessage(msg.to,"Creator Bot") 
                                 ma = ""
@@ -1558,13 +1558,13 @@ def bot(op):
                                     ma = aditmadzs.getContact(i)
                                     aditmadzs.sendMessage(msg.to, None, contentMetadata={'mid': i}, contentType=13)
 
-                        elif cmd == "about" or cmd == "About":
+                        elif cmd == "about" or cmd == "ข้อมูล":
                           if wait["selfbot"] == True:
                             if msg._from in admin:
-                               sendMention(msg.to, sender, "「 Aditmadzs BOT 」\n")
+                               sendMention(msg.to, sender, "「 Aumz BOT 」\n")
                                aditmadzs.sendMessage(msg.to, None, contentMetadata={'mid': mid}, contentType=13)
 
-                        elif cmd == "me" or text.lower() == 'mek':
+                        elif cmd == "me" or text.lower() == 'คอนแทค':
                           if wait["selfbot"] == True:
                             if msg._from in admin:
                                msg.contentType = 13
@@ -1740,7 +1740,7 @@ def bot(op):
                                contact = aditmadzs.getProfile()
                                mids = [contact.mid]
                                name = "{}".format(str(contact.displayName))
-                               url = 'https://line.me/ti/p/~adit_cmct'
+                               url = 'https://line.me/ti/p/~ADITMADZS'
                                iconlink = 'http://dl.profile.line-cdn.net/{}'.format(str(contact.pictureStatus))
                                text = "Masih Fresh "
                                sendMentionV10(msg.to, str(bot), str(name), str(url), str(iconlink))
@@ -2075,6 +2075,13 @@ def bot(op):
                                     me += str(e) + ". " +aditmadzs.getGroup(group).name + "\n"                                    
                                 aditmadzs.sendMessage(msg.to,"»» Aditmadzs Protect\n\n»» PROTECT URL :\n"+ma+"\n»» PROTECT KICK :\n"+mb+"\n»» PROTECT JOIN :\n"+md+"\n»» PROTECT CANCEL:\n"+mc+"\n»» PROTECT INVITE :\n"+me+"\nTotal「%s」Protect yang aktif" %(str(len(protectqr)+len(protectkick)+len(protectjoin)+len(protectcancel)+len(protectinvite))))
 
+                        elif cmd == "ออน":
+                          if wait["selfbot"] == True:
+                            if msg._from in admin:
+                               eltime = time.time() - mulai
+                               bot = "บอททำงานมาแล้ว " +waktu(eltime)
+                               aditmadzs.sendMessage(msg.to,bot)
+                               
                         elif cmd == "respon":
                           if wait["selfbot"] == True:
                             if msg._from in admin:
@@ -2106,6 +2113,37 @@ def bot(op):
                                 ki.leaveGroup(msg.to)
                                 kk.leaveGroup(msg.to)
                                 kc.leaveGroup(msg.to)
+                                
+                        elif cmd == "มา":
+                          if wait["selfbot"] == True:
+                            if msg._from in admin:
+                                G = aditmadzs.getGroup(msg.to)
+                                ginfo = aditmadzs.getGroup(msg.to)
+                                G.preventedJoinByTicket = False
+                                aditmadzs.updateGroup(G)
+                                invsend = 0
+                                Ticket = aditmadzs.reissueGroupTicket(msg.to)
+                                ki.acceptGroupInvitationByTicket(msg.to,Ticket)
+                                kk.acceptGroupInvitationByTicket(msg.to,Ticket)
+                                kc.acceptGroupInvitationByTicket(msg.to,Ticket)
+                                #km.acceptGroupInvitationByTicket(msg.to,Ticket)
+                                #kb.acceptGroupInvitationByTicket(msg.to,Ticket)	
+                                #kd.acceptGroupInvitationByTicket(msg.to,Ticket)
+                                #ke.acceptGroupInvitationByTicket(msg.to,Ticket)
+                                #kf.acceptGroupInvitationByTicket(msg.to,Ticket)
+                                #kg.acceptGroupInvitationByTicket(msg.to,Ticket)
+                                #kh.acceptGroupInvitationByTicket(msg.to,Ticket)									
+                                G = kc.getGroup(msg.to)
+                                G.preventedJoinByTicket = True
+                                kc.updateGroup(G)
+                                           
+                        elif cmd == "ไป":
+                          if wait["selfbot"] == True:
+                            if msg._from in admin:
+                                G = aditmadzs.getGroup(msg.to)
+                                ki.leaveGroup(msg.to)
+                                kk.leaveGroup(msg.to)
+                                kc.leaveGroup(msg.to)
 
                         elif cmd == "sprespon":
                           if wait["selfbot"] == True:
@@ -2119,7 +2157,7 @@ def bot(op):
                                 get_contact_time_start = time.time()
                                 get_contact = aditmadzs.getContact(mid)
                                 get_contact_time = time.time() - get_contact_time_start
-                                aditmadzs.sendMessage(msg.to, " »» Aditmadzs Speed respon\n\n - Get Profile\n   %.10f\n - Get Contact\n   %.10f\n - Get Group\n   %.10f" % (get_profile_time/3,get_contact_time/3,get_group_time/3))
+                                aditmadzs.sendMessage(msg.to, " »» Aum Speed respon\n\n - Get Profile\n   %.10f\n - Get Contact\n   %.10f\n - Get Group\n   %.10f" % (get_profile_time/3,get_contact_time/3,get_group_time/3))
 
                         elif cmd == "speed" or cmd == "sp":
                           if wait["selfbot"] == True:
@@ -2129,7 +2167,7 @@ def bot(op):
                                contact = aditmadzs.getProfile()
                                mids = [contact.mid]
                                name = "{}".format(str(contact.displayName))
-                               url = 'https://line.me/ti/p/~adit_cmct'
+                               url = 'https://line.me/ti/p/~ADITMADZS'
                                iconlink = 'http://dl.profile.line-cdn.net/{}'.format(str(contact.pictureStatus))
                                text = "Waiting...."
                                sendMentionV10(msg.to, str(text), str(name), str(url), str(iconlink))
@@ -2417,9 +2455,9 @@ def bot(op):
                                          msgs = "Protect invite sudah tidak aktif"
                                     aditmadzs.sendMessage(msg.to, "「Dinonaktifkan」\n" + msgs)                                                 
 
-                        elif 'Ditpro ' in msg.text:
+                        elif 'Protectall ' in msg.text:
                            if msg._from in admin:
-                              spl = msg.text.replace('Ditpro ','')
+                              spl = msg.text.replace('Protectall ','')
                               if spl == 'on':
                                   if msg.to in protectqr:
                                        msgs = ""
@@ -2486,11 +2524,11 @@ def bot(op):
                                            random.choice(ABC).kickoutFromGroup(msg.to, [target])
                                        except:
                                            pass
-
+                                           
 #===========ADMIN ADD============#
                         elif ("Adminadd " in msg.text):
                           if wait["selfbot"] == True:
-                            if msg._from in creator:
+                            if msg._from in owner:
                                key = eval(msg.contentMetadata["MENTION"])
                                key["MENTIONEES"][0]["M"]
                                targets = []
@@ -2535,8 +2573,8 @@ def bot(op):
                                        except:
                                            pass
 
-                        elif ("Admindell " in msg.text):
-                            if msg._from in creator:
+                        elif ("Admindel " in msg.text):
+                            if msg._from in owner:
                                key = eval(msg.contentMetadata["MENTION"])
                                key["MENTIONEES"][0]["M"]
                                targets = []
@@ -2552,7 +2590,7 @@ def bot(op):
                                        except:
                                            pass
 
-                        elif ("Staffdell " in msg.text):
+                        elif ("Staffdel " in msg.text):
                             if msg._from in admin:
                                key = eval(msg.contentMetadata["MENTION"])
                                key["MENTIONEES"][0]["M"]
@@ -2567,7 +2605,7 @@ def bot(op):
                                        except:
                                            pass
 
-                        elif ("Botdell " in msg.text):
+                        elif ("Botdel " in msg.text):
                             if msg._from in admin:
                                key = eval(msg.contentMetadata["MENTION"])
                                key["MENTIONEES"][0]["M"]
@@ -2648,13 +2686,13 @@ def bot(op):
                                     aditmadzs.sendMessage(msg.to, None, contentMetadata={'mid': i}, contentType=13)
 
 #===========COMMAND ON OFF============#
-                        elif cmd == "notag on" or text.lower() == 'notag on':
+                        elif cmd == "notag on" or text.lower() == 'เตะแทค เปิด':
                           if wait["selfbot"] == True:
                             if msg._from in admin:
                                 wait["Mentionkick"] = True
                                 aditmadzs.sendMessage(msg.to,"Notag diaktifkan")
 
-                        elif cmd == "notag off" or text.lower() == 'notag off':
+                        elif cmd == "notag off" or text.lower() == 'เตะแทค ปิด':
                           if wait["selfbot"] == True:
                             if msg._from in admin:
                                 wait["Mentionkick"] = False

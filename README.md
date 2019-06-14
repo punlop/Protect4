@@ -29,7 +29,7 @@ $ pip3 install wikipedia
 $ apt install git
 $ git clone https://github.com/punlop/Protect4
 $ cd Protect4
-$ python3 adit4.py
+$ python3 4k.py
 ```
 
 # VPS
@@ -53,6 +53,6 @@ $ sudo pip3 install wikipedia
 $ sudo apt-get install git
 $ git clone https://github.com/punlop/Protect4
 $ cd Protect4
-$ python3 adit4.py
+$ python3 4k.py
 ```
 
